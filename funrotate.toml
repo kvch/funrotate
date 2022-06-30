@@ -1,0 +1,23 @@
+[[files]]
+path = "file.log"
+interval = "daily"
+max_files = 4
+compress = true
+size = 1024
+mail = "sitbackandwait@gmail.com"
+post_rotate = "echo szia"
+strategy = "create" # copy
+missing_ok = true
+max_age = 100
+
+[[files]]
+path = "other-file.log"
+interval = "daily"
+max_files = 4
+compress = false
+size = 1024
+mail = "sitbackandwait@gmail.com"
+post_rotate = "echo szia"
+strategy = "create" # copy
+missing_ok = true
+max_age = 100
